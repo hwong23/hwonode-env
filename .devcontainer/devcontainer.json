@@ -33,7 +33,12 @@
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install"
+	"postCreateCommand": "yarn install",
+	"features": {
+		"ghcr.io/rocker-org/devcontainer-features/pandoc:1": {
+			"version": "2"
+		}
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
